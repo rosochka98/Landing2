@@ -1,0 +1,251 @@
+@font-face {
+  font-family: 'Montserrat-Light';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../fonts/Montserrat-Light.ttf')
+}
+
+@font-face {
+  font-family: 'Raleway-Regular';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/Raleway-Regular.ttf')
+}
+
+@font-face {
+  font-family: 'Raleway-SemiBold';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/Raleway-SemiBold.ttf')
+}
+
+@font-face {
+  font-family: 'Raleway-ExtraBold';
+  font-style: normal;
+  font-weight: 800;
+  src: url('../fonts/Raleway-ExtraBold.ttf')
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  width: 1920px;
+  margin: 0 auto;
+}
+
+.header {
+  height: 1024px;
+  background-image: url('../img/1.jpg');
+  padding: 40px 150px 42px 150px;
+  box-sizing: border-box;
+}
+
+.logo {
+  display: block;
+  padding-left: 226px;
+  float: left;
+}
+
+.logo-svg {
+  fill: #fff;
+}
+
+.logo-svg:hover {
+  fill: #ccc;
+}
+
+.header-nav:after {
+  content: "";
+  display: block;
+  width: 100%;
+  clear: both;
+}
+
+.header-nav-list {
+  float: left;
+  width: 713px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 22px;
+  padding-left: 219px;
+  margin: 0;
+}
+
+.header-nav-list-item,
+.header-nav-list-item a {
+  display: block;
+  text-transform: capitalize;
+  font-family: "Montserrat-Light";
+  color: #ffffff;
+  font-size: 14px;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.header-nav-list-item:hover a {
+  color: #ccc;
+}
+
+.icon {
+  display: block;
+  float: left;
+  padding: 15px 28px 0 63px;
+  fill: #fff;
+}
+
+.icon:hover {
+  fill: #ccc;
+}
+
+.search {
+  padding-top: 15px;
+}
+
+input[type="search"] {
+  height: 24px;
+  width: 24px;
+  background-image: url(../img/3.svg);
+  background-color: transparent;
+  background-size: contain;
+  background-repeat: no-repeat;
+  outline: none;
+  border: none;
+}
+
+.search:hover input[type="search"] {
+  background-image: url(../img/5.svg);
+}
+
+input[type="search"]:focus {
+  width: 150px;
+  border: 1px solid white;
+  transition: width 1s ease-out;
+  background-position: right;
+}
+
+.slider-arrow-left {
+  /*  border: 1px solid black;*/
+  display: block;
+  width: 40px;
+  height: 73px;
+  position: relative;
+  margin-top: 400px;
+  float: left;
+}
+
+.slider-arrow-left:after {
+  content: "";
+  width: 50px;
+  height: 50px;
+  border-top: 2px solid #a3a2a0;
+  border-left: 2px solid #a3a2a0;
+  transform: rotate(-45deg);
+  display: inline-block;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.slider-arrow-left:hover:after {
+  border-top: 2px solid #998675;
+  border-left: 2px solid #998675;
+}
+
+.slider-arrow-right {
+  /*  border: 1px solid black;*/
+  display: block;
+  width: 40px;
+  height: 73px;
+  position: relative;
+  margin-top: 400px;
+  float: right;
+}
+
+.slider-arrow-right:after {
+  content: "";
+  width: 50px;
+  height: 50px;
+  border-bottom: 2px solid #a3a2a0;
+  border-right: 2px solid #a3a2a0;
+  transform: rotate(-45deg);
+  display: inline-block;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.slider-arrow-right:hover:after {
+  border-bottom: 2px solid #998675;
+  border-right: 2px solid #998675;
+}
+
+.header-center-text h2 {
+  padding: 285px 0 0 582px;
+  margin: 0;
+  color: #ffffff;
+  font-family: "Raleway-Regular";
+  font-size: 36px;
+  font-weight: 500;
+}
+
+.header-center-text h1 {
+  padding: 14px 0 0 516px;
+  margin: 0;
+  color: #ffffff;
+  font-family: "Raleway-ExtraBold";
+  font-size: 52px;
+  font-weight: 400;
+}
+
+.header-center-text p {
+  padding: 19px 0 0 530px;
+  margin: 0;
+  width: 574px;
+  color: #ffffff;
+  font-family: "Montserrat-Light";
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  ;
+}
+
+.header-center-button {
+  display: block;
+  width: 170px;
+  border-radius: 3px;
+  background-color: #998675;
+  text-decoration: none;
+  border-bottom: 3px solid #736356;
+  margin: 52px 0 0 726px;
+}
+
+.button-text {
+  display: block;
+  font-family: "Raleway-ExtraBold";
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 23px;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 21px 0;
+}
+
+.header-center-button:hover {
+  background-color: #736356;
+  border-bottom: 3px solid #998675;
+}
+
+.header-center-button:hover .button-text {
+  color: #ccc;
+}
+
+.header-center-button:active .button-text {
+  color: #ffffff;
+}
+
+.radio {
+  margin: 283px 0 0 759px;
+}
